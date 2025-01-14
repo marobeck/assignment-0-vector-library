@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Using Canvas</title>
+	</head>
+
+	<body onload="main()">
+		<canvas id="cnv1" width="400" height="400">
+			Use a browser that supports "canvas"
+		</canvas>
+		<br>
+
+		<!--Coordiants-->
+		<label>V1:</label>
+		<input type="text" id="V1_x" name="name" required minlength="4" maxlength="8" size="10" />
+		<input type="text" id="V1_y" name="name" required minlength="4" maxlength="8" size="10" />
+		<br>
+
+		<label>V2:</label>
+		<input type="text" id="V2_x" name="name" required minlength="4" maxlength="8" size="10" />
+		<input type="text" id="V2_y" name="name" required minlength="4" maxlength="8" size="10" />
+		<br>
+
+		<input type="button" value="Draw" onclick="handleDrawEvent()"></input>
+		<br>
+		<br>
+
+		<!--Operations-->
+		<label for="pet-select">Operation:</label>
+
+		<select name="operations" id="operation-select">
+			<option value="add">Add</option>
+			<option value="sub">Subtract</option>
+			<option value="mul">Multiply</option>
+			<option value="div">Divide</option>
+			<option value="angbet">Angle Between</option>
+			<option value="area">Area</option>
+			<option value="mag">Magnitude</option>
+			<option value="nor">Normalize</option>
+		</select>
+		<label>Scalar: </label>
+		<input type="text" id="scalar" name="name" required minlength="4" maxlength="8" size="10" />
+
+		<br>
+		<input type="button" value="Draw" onclick="handleDrawOperationEvent()"></input>
+
+
+		<script src="asg0.js"></script>
+		<script src="../lib/cuon-matrix-cse160.js"></script>
+	</body>
+</html>
